@@ -1,0 +1,83 @@
+* {
+  font-family: Montserrat, sans-serif;
+  border-width: 0;
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+.steps {
+  color: #000;
+  display: flex;
+  font-size: 100%;
+  justify-content: space-between;
+  line-height: 24px;
+  padding: 3px 10px;
+  text-align: left;
+  width: 100%;
+  height: 38px;
+}
+
+.step {
+  align-items: center;
+  border-width: 0;
+  background-color: #f1f1f1;
+  box-sizing: inherit;
+  clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0 100%, 5% 50%, 0 0);
+  color: #b1b1b1;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 18px;
+  padding: 0.5rem 0.25rem;
+  text-align: center;
+  transform: scaleX(1.03);
+  width: 20%;
+  height: 100%;
+  gap: 1em;
+}
+
+.step:last-child {
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 5% 50%, 0 0);
+}
+
+.step:first-child {
+  clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
+}
+.completed {
+  color: #fff;
+  background-color: #0097fe;
+}
+
+.step-number {
+  align-items: center;
+  background-color: #fff;
+  border: unset;
+  border-image: unset unset unset unset unset;
+  border-radius: 100px;
+  box-sizing: inherit;
+  color: grey;
+  display: flex;
+  font-family: Montserrat, sans-serif;
+  font-size: 100%;
+  font-weight: 700;
+  height: 20px;
+  justify-content: center;
+  line-height: 18px;
+  text-align: center;
+  width: 20px;
+}
+p {
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .step-name {
+    display: none;
+  }
+  .current {
+    display: flex;
+    width: fit-content;
+    gap: 0.5em;
+  }
+}
