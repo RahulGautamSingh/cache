@@ -1,0 +1,3 @@
+[submodule "hash-files"]
+	path = hash-files
+	url = https://github.com/RahulGautamSingh/hash-files.git
